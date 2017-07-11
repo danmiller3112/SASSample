@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Smart AdServer Sample</string>
+
+    <!-- Main Activity -->
+    <string name="title_activity_main">Smart AdServer Sample</string>
+    <string name="title_activity_main_short">SAS Sample</string>
+    <string-array name="activity_main_implementations_array">
+        <item>Banner</item>
+        <item>Interstitial</item>
+        <item>Single banner in RecyclerView</item>
+        <item>Multiple banners and medias in RecyclerView</item>
+        <item>Native Ad in RecyclerView</item>
+        <item>Native Ad with Video in RecyclerView</item>
+        <item>ViewPager integration</item>
+    </string-array>
+    <string name="activity_main_headerText">CHOOSE A SAMPLE :</string>
+    <string name="activity_main_footerText">This sample demonstrates how to implement the Smart AdServer SDK in Android Apps.</string>
+
+    <!-- Banner Activity -->
+    <string name="title_activity_banner">Banner integration</string>
+    <string name="activity_banner_refresh_btn">RELOAD BANNER AD</string>
+    <string name="activity_banner_instructions">Simple banner integration. See implementation in BannerActivity.</string>
+
+    <!-- Interstitial Activity -->
+    <string name="title_activity_interstitial">Interstitial integration</string>
+    <string name="activity_interstitial_refresh_btn">LOAD INTERSTITIAL AD</string>
+    <string name="activity_interstitial_instructions">Simple interstitial integration. Click the button to display an interstitial ad. See implementation in InterstitialActivity.</string>
+
+    <!-- Recycler Activity -->
+    <string name="title_activity_recycler">Multiple banners in RecyclerView</string>
+
+    <!-- SimpleRecycler Activity -->
+    <string name="title_activity_simple_recycler">Single banner in RecyclerView</string>
+
+    <!-- Native Ads Activity -->
+    <string name="title_activity_native">Native Ads integration</string>
+
+    <!-- Swipe Activity -->
+    <string name="title_activity_swipe">ViewPager Integration</string>
+    <string name="swipe_section_text">Section %1d is just a dummy section.</string>
+
+</resources>

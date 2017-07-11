@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/subParentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_cell_height"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:background="#fff"
+
+        >
+
+
+        <TextView
+            android:id="@+id/tv_index"
+            android:layout_width="@dimen/list_text_height"
+            android:layout_height="@dimen/list_text_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/square_light_gray"
+            android:textSize="10sp"
+            android:text=""/>
+
+        <ImageView
+            android:id="@+id/poster_image"
+            android:layout_width="@dimen/list_text_height"
+            android:layout_height="@dimen/list_text_height"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerInside" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="@integer/list_subtitle_max_lines"
+                android:textColor="#bbb"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/adOptionsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="Sponsored"
+                    android:textSize="11sp"
+                    android:layout_marginEnd="4dp"
+                    android:textColor="#AAAAAA" />
+                <com.smartadserver.android.library.ui.SASAdChoicesView
+                    android:id="@+id/ad_choices_view"
+                    android:background="#FFFFFF"
+                    android:layout_weight="0"
+                    android:padding="3dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/tv_button"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:background="#3cf"
+                android:textColor="#fff"
+                android:text="tap"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
